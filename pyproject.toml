@@ -3,35 +3,5 @@ requires = [
     "setuptools>=42",
     "wheel",
     "torch",
-    "numpy",
-    "absl-py",
 ]
 build-backend = "setuptools.build_meta"
-
-[project]
-name = "grouped_gemm"
-version = "1.1.4"
-description = "GEMM Grouped"
-authors = [
-    {name = "Trevor Gale", email = "tgale@stanford.edu"},
-    {name = "Jiang Shao", email = "jiangs@nvidia.com"},
-    {name = "Shiqing Fan", email = "shiqingf@nvidia.com"},
-]
-requires-python = ">=3.7"
-license = {text = "BSD"}
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: BSD License",
-    "Operating System :: Unix",
-]
-dependencies = [
-    "absl-py",
-    "numpy",
-    "torch",
-]
-
-[project.urls]
-Homepage = "https://github.com/fanshiqing/grouped_gemm"
-
-[tool.setuptools]
-packages = ["grouped_gemm"]
